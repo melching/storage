@@ -16,5 +16,7 @@ Contains various pretrained backbones for image networks (even SOTA)
 
 - [TODO] A simple image classifier script (finetuning)  
 
+- [TODO] [Simple image classifier finetuning using timm](MachineLearning/Pytorch/train_timm.py)
+
 - [TODO] A simple Pytorch-Lightning script for image classification
 

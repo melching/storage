@@ -95,6 +95,10 @@ for e in tqdm(range(EPOCHS), desc="Epochs"):
     print("Training:", "Mean Loss", np.mean(loss_epoch["train"]))
     print("Validation:", "Mean Loss", np.mean(loss_epoch["val"]), "Mean Acc", np.mean(val_acc))
     
-# save model weights (load using "model.load_state_dict(torch.load(PATH))" )
+# save model
 # see: https://pytorch.org/tutorials/beginner/saving_loading_models.html
 torch.save(model.state_dict(), "./my_fancy_model.pkl")
+
+# # load 
+# model = SimpleImageClassifier(2).to(DEVICE)
+# model.load_state_dict(torch.load(PATH))
